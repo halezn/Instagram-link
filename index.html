@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Link</title>
+</head>
+<body>
+    <a href="#" onclick="openInstagram()">Follow on Instagram</a>
+
+    <script>
+        function openInstagram() {
+            // تلاش برای باز کردن اپلیکیشن اینستاگرام
+            window.location = "instagram://user?username=halezn";
+
+            // اگر اپلیکیشن نصب نبود، به نسخه وب هدایت می‌شود
+            setTimeout(function() {
+                window.location = "https://www.instagram.com/halezn/";
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
